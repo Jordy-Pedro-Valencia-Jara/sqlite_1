@@ -1,3 +1,4 @@
+import 'package:path/path.dart';
 import 'package:sqlite_1/db.dart';
 import 'package:sqlite_1/animal.dart';
 import 'package:flutter/material.dart';
@@ -80,7 +81,7 @@ class _EditarState extends State<Editar> {
                       ));
                     }
                     // Volver a la pantalla principal
-                    Navigator.pushNamed(context, "/");
+                    Navigator.pushReplacementNamed(context,"/");
                   }
                 },
                 child: Text("Guardar"),
